@@ -1,21 +1,21 @@
 main.cpp
 #include <iostream>
-#include "iu.h" //include "iu.h"´Â ÀÌ ÆÄÀÏÀ» ¾²°Ú´Ù´Â ÀÇ¹Ì
+#include "iu.h" //include "iu.h"ëŠ” ì´ íŒŒì¼ì„ ì“°ê² ë‹¤ëŠ” ì˜ë¯¸
 #include "gong.h"
 using namespace std;
-//using namespace iu //iu.h¿¡ ÀÖ´Â º¯¼ö¸¦ ¾²°Ú´Ù´Â ÀÇ¹Ì
-//using namespace gong.h 
+//using namespace iu; //iu.hì— ìˆëŠ” ë³€ìˆ˜ë¥¼ ì“°ê² ë‹¤ëŠ” ì˜ë¯¸
+using namespace gong; 
 
 int main() {
-    /* 2Àå Quiz #3
-    cout << "iuÀÇ ¼¼ º¯¼ö Ãâ·Â\n";
+    /* 2ì¥ Quiz #3
+    cout << "iuì˜ ì„¸ ë³€ìˆ˜ ì¶œë ¥\n";
      cout << a << " " << b << " " << c << endl; //using namespace iu
 
-     cout << gong::a << endl; //º¯¼ö ÀÛÀº ÂÊÀÌ ¾çº¸, °°Àº ÀÌ¸§ÀÇ ÇÔ¼ö¿Í º¯¼ö°¡ ÀÖÀ» ¶§´Â using namespace¸¦ ¾µ ¼ö ¾øÀ¸¹Ç·Î gong:: ÇØÁÖ¾î¾ß ÇÑ´Ù. */
+     cout << gong::a << endl; //ë³€ìˆ˜ ì‘ì€ ìª½ì´ ì–‘ë³´, ê°™ì€ ì´ë¦„ì˜ í•¨ìˆ˜ì™€ ë³€ìˆ˜ê°€ ìˆì„ ë•ŒëŠ” using namespaceë¥¼ ì“¸ ìˆ˜ ì—†ìœ¼ë¯€ë¡œ gong:: í•´ì£¼ì–´ì•¼ í•œë‹¤. */
 
-    cout << "iuÀÇ ¼¼ º¯¼ö Ãâ·Â\n";
-    cout << iu::aout << " " << iu::bout << " " << iu::cout << endl; //using namespace iu¸¦ ÇÏ¸é ¾È µÈ´Ù. cout°ú º¯¼ö¸íÀÌ¶û °°¾Æ¼­
-    cout << gong::a << endl;
+    cout << "iuì˜ ì„¸ ë³€ìˆ˜ ì¶œë ¥\n";
+    cout << iu::aout << " " << iu::bout << " " << iu::cout << endl; //using namespace iuë¥¼ í•˜ë©´ ì•ˆ ëœë‹¤. coutê³¼ ë³€ìˆ˜ëª…ì´ë‘ ê°™ì•„ì„œ
+    cout << a << endl;
 
     return 0;
 
