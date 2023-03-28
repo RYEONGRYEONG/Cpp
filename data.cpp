@@ -1,3 +1,5 @@
+// 1152 단어의 개수
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -15,7 +17,7 @@ int main() {
 	}
 
 	if (data[0] == ' ') count--;
-	if (data[data.length() -1 ] == ' ') count--;
+	if (data[data.length() -1 ] == ' ') count--; //인덱스는 길이보다 하나씩 적음
 		
 	cout << count;
 
