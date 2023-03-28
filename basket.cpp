@@ -16,12 +16,12 @@ using namespace std;
 
 int main() {
 	int N, M, a, z;
-	int arr[101] = { 0 };
+	int arr[101];
 
 	cin >> N >> M;
 
-	for (int i = 0; i < N; i++) {
-		arr[i] = i + 1;
+	for (int i = 1; i <= N; i++) {
+		arr[i] = i;
 	}
 
 	for (int i = 0; i < M; i++) {
@@ -35,7 +35,11 @@ int main() {
 			a++;
 			z--;
 		}
-
 	}
+
+	for (int i = 1; i <= N; i++) {
+		cout << arr[i] << " ";
+	}
+
 	return 0;
 }
