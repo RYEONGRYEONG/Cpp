@@ -10,14 +10,14 @@ while문을 for문으로 바꿔보고, cin, cout을 scanf printf로 바꿔봐도
 */
 
 int main() {
-	int A, B, V;
+	int A, B, V; //A는 낮에 올라갈 수 있는 길이, B는 밤에 미끄러져내려오는 높이, V 나무막대의 길이
 	int day = 0;
 
 
 	scanf("%d %d %d", &A, &B, &V);
 	int diff = A - B;
 
-	// 예제 2 1 5 , 5 1 6 , 6 3 6
+	// 예제 2 1 5 > 4, 5 1 6 > 2, 6 2 5
 	if ((V - B) % (A - B) != 0) {
 		day = (V - B) / (A - B) + 1;
 		if (A >= V) {
