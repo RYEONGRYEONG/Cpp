@@ -18,14 +18,14 @@ int main() {
 	int N, M, a, z;
 	int arr[101];
 
-	cin >> N >> M;
+	cin >> N >> M; //바구니의 총 개수 N과, M번 입력 
 
 	for (int i = 1; i <= N; i++) {
-		arr[i] = i;
+		arr[i] = i; // 왼쪽 바구니부터 1번부터 N번
 	}
 
 	for (int i = 0; i < M; i++) {
-		cin >> a >> z;
+		cin >> a >> z; //범위 지정
 		while (a < z) {
 			int temp;
 			temp = arr[a];
